@@ -1,0 +1,103 @@
+/**
+    Especifidad (0,1,1)
+**/
+body{
+    color: rgb(52, 4, 65);
+    background-color: azure;
+
+}
+/**
+    Especifidad (0,1,1)
+**/
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/**
+    Especifidad (0,1,1)
+**/
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+}
+/**
+    Especifidad (0,1,1)
+**/
+form{
+    display: grid;
+    height: 30em;
+    width: 20em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color:black;
+    background-color: #f352f3;
+    padding: 15px;
+    border-radius: 32px;
+
+}
+/**
+    Especifidad (0,1,1)
+**/
+input[type=text]{
+    grid-column: 1 / span 5;
+    text-align: end;
+    font-size: 2.5em;
+
+}
+
+textarea{
+    resize: none;
+    grid-column: 1/span 5;
+    font-size: 1.5em;
+}
+
+/**
+    Especifidad (0,2,1)
+**/
+input[type="button"][ name = "cero"],
+input[type="button"][ name = "uno"],
+input[type="button"][ name = "dos"],
+input[type="button"][ name = "tres"],
+input[type="button"][ name = "cuatro"],
+input[type="button"][ name = "cinco"],
+input[type="button"][ name = "seis"],
+input[type="button"][ name = "siete"],
+input[type="button"][ name = "ocho"],
+input[type="button"][ name = "nueve"]
+{
+    background-color: white;
+}
+
+
+/**
+    Especifidad (0,1,1)
+**/
+input[type=button]{
+    margin: 0.1em;
+    padding: 0;
+    font-size: 1em;
+    border: none;
+    background-color: #15e7b6;
+    border-radius: 32px;
+}
+
+/**
+    Especifidad (0,1,1)
+**/
+input[name="seno"]{
+    grid-column-start: 1;
+}
+/**
+    Especifidad (0,1,1)
+**/
+input[name="uno"]{
+    grid-column-start: 2;
+}
+/**
+    Especifidad (0,1,1)
+**/
+input[name="cero"]{
+    grid-column-start: 3;
+}

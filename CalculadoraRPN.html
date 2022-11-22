@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora CalculadoraRPN</title>
+    <meta name="author" content="Adrián Vega" />
+    <meta name="description" content="Calculadora RPN ej 5 practica ECMAscript" />
+    <meta name="keywords" content="calculadora, científica, operaciones, calcular, javascrip" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <script src="CalculadoraRPN.js"></script>
+</head>
+
+<body onload="calculadora.iniciar();">
+    <h1>Calculadora RPN</h1>
+    <h2>Calculadora en notacion polaca inversa</h2>
+    <section>
+        <h2>Calculadora: </h2>
+
+        <form name="calculadoraRPN">
+            <label for="pila">Pila:</label>
+            <textarea name="pila" id="pila" rows="5" cols="10" readonly></textarea>
+            <label for="texto">Pantalla:</label>
+            <input type="text" name="pantalla" id="texto" readonly>
+
+            <input type="button" name="arcoseno" value="arcsen" onclick="calculadora.calculo('arcsen');">
+            <input type="button" name="arcocoseno" value="arccos" onclick="calculadora.calculo('arccos');">
+            <input type="button" name="arcotangente" value="arctan" onclick="calculadora.calculo('arctan');">
+
+
+
+            <input type="button" name="seno" value="sen" onclick="calculadora.calculo('sen');">
+            <input type="button" name="coseno" value="cos" onclick="calculadora.calculo('cos');">
+            <input type="button" name="tangente" value="tan" onclick="calculadora.calculo('tan');">
+            <input type="button" name="x²" value="x²" onclick="calculadora.calculo('cuadrado');">
+            <input type="button" name="xʸ" value="xʸ" onclick="calculadora.operar('elevado');">
+
+            <input type="button" name="raiz" value="√" onclick="calculadora.calculo('raiz');">
+            <input type="button" name="10ˣ" value="10ˣ" onclick="calculadora.calculo('potenciaDiez');">
+            <input type="button" name="log" value="log" onclick="calculadora.calculo('log');">
+            <input type="button" name="Exp" value="Exp" onclick="calculadora.calculo('exp');">
+            <input type="button" name="Mod" value="Mod" onclick="calculadora.operar('mod');">
+
+            <input type="button" name="cambiar signo" value="+/-" onclick="calculadora.cambiarSigno();">
+            <input type="button" name="CE" value="CE" onclick="calculadora.ce();">
+            <input type="button" name="C" value="C" onclick="calculadora.on();">
+            <input type="button" name="del" value="del" onclick="calculadora.del();">
+            <input type="button" name="/" value="/" onclick="calculadora.operar('/');">
+
+            <input type="button" name="pi" value="pi" onclick="calculadora.pi();">
+            <input type="button" name="siete" value="7" onclick="calculadora.digito(7)">
+            <input type="button" name="ocho" value="8" onclick="calculadora.digito(8)">
+            <input type="button" name="nueve" value="9" onclick="calculadora.digito(9)">
+            <input type="button" name="multiplicación" value="X" onclick="calculadora.operar('*');">
+
+            <input type="button" name="factorial" value="n!" onclick="calculadora.calculo('fact');">
+            <input type="button" name="cuatro" value="4" onclick="calculadora.digito(4)">
+            <input type="button" name="cinco" value="5" onclick="calculadora.digito(5)">
+            <input type="button" name="seis" value="6" onclick="calculadora.digito(6)">
+            <input type="button" name="resta" value="-" onclick="calculadora.operar('-');">
+
+
+            <input type="button" name="uno" value="1" onclick="calculadora.digito(1)">
+            <input type="button" name="dos" value="2" onclick="calculadora.digito(2);">
+            <input type="button" name="tres" value="3" onclick="calculadora.digito(3)">
+            <input type="button" name="suma" value="+" onclick="calculadora.operar('+');">
+
+            <input type="button" name="cero" value="0" onclick="calculadora.digito(0)">
+            <input type="button" name="decimal" value="." onclick="calculadora.decimal();">
+            <input type="button" name="enter" value="enter" onclick="calculadora.enter();">
+
+
+
+
+
+
+
+        </form>
+
+    </section>
+</body>
+
+</html>
